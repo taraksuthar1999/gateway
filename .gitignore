@@ -1,4 +1,5 @@
 HELP.md
+src/main/resources/your_pfx_certificate.pfx
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

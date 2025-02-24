@@ -84,7 +84,7 @@ public class SecurityConfiguration {
     @Bean
     public CorsWebFilter corsWebFilter() {
         CorsConfiguration corsConfig = new CorsConfiguration();
-        corsConfig.addAllowedOrigin("http://localhost:5173"); // ✅ Allow frontend origin
+        corsConfig.setAllowedOrigins(Arrays.asList("http://localhost:5173","http://localhost:8080","null","https://taraksuthar1999.github.io"));
         corsConfig.addAllowedMethod("*"); // ✅ Allow all HTTP methods (GET, POST, etc.)
 //        corsConfig.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
         corsConfig.setAllowedHeaders(Arrays.asList("*","Authorization", "Content-Type"));
